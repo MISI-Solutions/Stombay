@@ -8,6 +8,10 @@ header h2 {
     margin: 0;
 }
 
+body {
+    position: relative;
+}
+
 /******> Interested in Joining? <******/
 
 #interested-in-joining {
@@ -150,12 +154,14 @@ header h2 {
 }
 
 .pop-up {
-    position: fixed;
-    width: 65em;
+    position: absolute;
+    max-width: 100em;
+    width: 50%;
+    min-width: 50em;
     height: 70em;
     background: #f5f5f5;
-    top: 5em;
-    left: 30%;
+    top: 40%;
+    left: 25%;
     z-index: 3;
     border-radius: 39px;
     box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.2);
@@ -164,6 +170,8 @@ header h2 {
 
 .pop-up .pop-up-container {
     margin: auto;
+    width: 100%;
+    max-width: 70em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -274,4 +282,21 @@ header h2 {
 
 #overlay.opened, .opened {
     display: block;
+}
+
+.pop-up p {
+    padding-top: 0.5em;
+    margin-left: 0;
+}
+
+/******> Media Queries <******/
+@media (max-device-width: 72.5em) {
+    #current-openings {
+        width: 80%;
+    }
+
+    .pop-up {
+        top: 30%;
+        left: 10%;
+    }
 }
