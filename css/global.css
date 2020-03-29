@@ -58,6 +58,17 @@ h1 {
     z-index: 1;
 }
 
+#stombay-description img {
+    position: absolute;
+    left: 38em;
+    top: 2em;
+    z-index: 0;
+    animation-name: slide-up;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
 p {
     color: white;
     font-family: 'Rubik', sans-serif;
@@ -76,6 +87,13 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#announcement img {
+    animation-name: shake;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-delay: 5s;
 }
 
 .header-nav ul {
@@ -155,4 +173,48 @@ h2 {
 #header-play h1 {
     font-size: 2.5em;
     margin: 0;
+}
+
+/******> Animations <******/
+@keyframes shake {
+    0% {
+        transform: rotate(-5deg);
+    }
+
+    5% {
+        transform: rotate(10deg);
+    }
+
+    10% {
+        transform: rotate(-5deg);
+    }
+
+    15% {
+        transform: rotate(10deg);
+    }
+
+    20% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+@keyframes slide-up {
+    0% {
+        top: 2em;
+        z-index: 0;
+    }
+
+    95% {
+        top: 0.15em;
+        z-index: 0;
+    }
+
+    100% {
+        top: 0.15em;
+        z-index: 1;
+    }
 }
