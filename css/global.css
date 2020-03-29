@@ -218,3 +218,32 @@ h2 {
         z-index: 1;
     }
 }
+
+/******> Media Queries <******/
+@media (max-device-width: 72.5em) {
+    #stombay-description {
+        margin-left: 1em;
+    }
+
+    #stombay-description h1 {
+        left: 6.3em;
+    }
+
+    #stombay-description img {
+        left: 34em;
+    }
+
+    .header-nav ul {
+        left: 17em;
+    }
+
+    #announcement {
+        height: 3em;
+        width: 18em;
+        margin-right: 1em;
+    }
+
+    p {
+        font-size: 0.8em;
+    }
+}
