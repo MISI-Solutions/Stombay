@@ -191,6 +191,15 @@ body {
      cursor: pointer;
  }
 
+#current-openings-content .job-opening p {
+    color: rgba(0, 0, 0, 0.4);
+    font-weight: 600;
+    margin-right: auto;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 25px;
+    padding: 0.8em;
+}
+
 #current-openings-content .job-opening > img {
     opacity: 0.2;
     transition: 1s;
@@ -252,6 +261,8 @@ body {
     font-family: 'Arial Black', sans-serif;
     width: 100%;
     text-align: center;
+    margin: 0.25em 0 0 0;
+    line-height: 1em;
 }
 
 .pop-up h2 {
@@ -372,5 +383,15 @@ body {
 
     #benefits {
         width: 80%;
+    }
+
+    .pop-up {
+        transform: translate(-50%, -50%) scale(0.8);
+    }
+}
+
+@media (max-device-height: 950px) {
+    .pop-up {
+        transform: translate(-50%, -50%) scale(0.7);
     }
 }
