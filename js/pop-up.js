@@ -1,11 +1,23 @@
 const closeBtn = document.querySelectorAll(".close-button");
-const programmer = document.querySelector("#programmer");
+const gamedeveloper = document.querySelector("#gamedeveloper");
+const systemdeveloper = document.querySelector("#systemdeveloper");
+const modelerandanimation = document.querySelector("#modelerandanimations");
 const uiDesigner = document.querySelector("#ui-designer");
 const builder = document.querySelector("#builder");
 const overlay = document.querySelector("#overlay");
 
-programmer.addEventListener("click", function() {
-    document.querySelector("#programmer-pop-up").classList.toggle("opened");
+gamedeveloper.addEventListener("click", function() {
+    document.querySelector("#gamedeveloper-pop-up").classList.toggle("opened");
+    overlay.classList.toggle("opened");
+});
+
+systemdeveloper.addEventListener("click", function() {
+    document.querySelector("#systemdeveloper-pop-up").classList.toggle("opened");
+    overlay.classList.toggle("opened");
+});
+
+modelerandanimation.addEventListener("click", function() {
+    document.querySelector("#modelerandanimations-pop-up").classList.toggle("opened");
     overlay.classList.toggle("opened");
 });
 
