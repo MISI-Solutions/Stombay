@@ -41,11 +41,12 @@
 }
 
 #news-top {
-    width: 80em;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-end;
     margin: 0 0 0.5em 0;
+    padding: 0 20% 0;
 }
 
 #news h2 {

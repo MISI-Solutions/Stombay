@@ -70,8 +70,75 @@ body {
     padding: 0;
 }
 
-/******> Current Openings <******/
+/******> Benefits <******/
+#benefits {
+    width: 80em;
+    height: 20em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
 
+#benefits-title {
+    width: 96%;
+    height: 3em;
+    border-bottom: 6px solid #a500fe;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0 0 0.6em 0;
+    margin-left: 0.5em;
+    position: relative;
+}
+
+#benefits-title img {
+    height: 60%;
+    z-index: 2;
+    position: absolute;
+    margin-left: -0.4em;
+}
+
+#benefits-title h3 {
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 2.5em;
+    background: #a500fe;
+    height: 100%;
+    padding: 0.4em 0.4em 0.4em 2em;
+    border-radius: 25px;
+    margin-left: -0.8em;
+}
+
+#benefits-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5em;
+}
+
+#benefits-content h3 {
+    color: #363636;
+    font-size: 1.8em;
+    font-weight: 700;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+}
+
+#benefits-content p {
+    color: #363636;
+    font-size: 1.2em;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    margin: 0.2em 0 0 0;
+}
+
+.benefits-content-element {
+    width: 33%;
+}
+
+/******> Current Openings <******/
 #current-openings {
     width: 80em;
     height: 45em;
@@ -154,14 +221,15 @@ body {
 }
 
 .pop-up {
-    position: absolute;
+    position: fixed;
     max-width: 100em;
     width: 50%;
     min-width: 50em;
     height: 70em;
     background: #f5f5f5;
-    top: 40%;
-    left: 25%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 3;
     border-radius: 39px;
     box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.2);
@@ -295,8 +363,7 @@ body {
         width: 80%;
     }
 
-    .pop-up {
-        top: 30%;
-        left: 10%;
+    #benefits {
+        width: 80%;
     }
 }
